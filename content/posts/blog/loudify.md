@@ -1,7 +1,7 @@
 ---
 author: "Martyn van Dijke"
 title: "Loudify"
-date: "09-07-2023"
+date: 2023-07-09
 tags: ["blog", "gr-lora","gnuradio"]
 description: "blog"
 ShowToc: false

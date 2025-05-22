@@ -14,15 +14,13 @@ languages:
       series: series
     menu:
       main:
-        - name: Archive
-          url: archives
+        - name: Blog
+          url: tags/blog
           weight: 5
-        - name: Search
-          url: search/
+        - name: About me
+          url: about/
           weight: 10
-        - name: Tags
-          url: tags/
-          weight: 10
+ 
 
 params:
   env: production
@@ -76,10 +74,8 @@ params:
       imageWidth: 120
       imageHeight: 120
       buttons:
-        - name: blog
+        - name: projects & blog
           url: "https://vandijke.xyz/tags/blog/"
-        - name: homer
-          url: "https://homer.vandijke.xyz/"
 
   socialIcons:
       - name: "github"
