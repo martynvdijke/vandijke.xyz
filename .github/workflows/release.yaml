@@ -46,6 +46,12 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Get version
+        id: version
+        run: |
+          VERSION=$(git describe --tags --abbrev=0 | sed 's/^v//')
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+
       - name: Install hugo
         run: |
           # renovate: datasource=github-releases depName=gohugoio/hugo
@@ -62,6 +68,6 @@ jobs:
       - name: Push Docker image
         run: |
           docker push martynvandijke/vandijke.xyz:latest
-          echo "Pushing versioned tag: ${{ steps.semantic-release.outputs.version }}"
-          docker tag martynvandijke/vandijke.xyz:latest martynvandijke/vandijke.xyz:${{ steps.semantic-release.outputs.version }}
-          docker push martynvandijke/vandijke.xyz:${{ steps.semantic-release.outputs.version }}
+          echo "Pushing versioned tag: ${{ steps.version.outputs.version }}"
+          docker tag martynvandijke/vandijke.xyz:latest martynvandijke/vandijke.xyz:${{ steps.version.outputs.version }}
+          docker push martynvandijke/vandijke.xyz:${{ steps.version.outputs.version }}
