@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/martynvdijke/vandijke.xyz/compare/v1.0.2...v1.0.3) (2026-02-20)
+
+
+### Bug Fixes
+
+* **ci:** add in renovate json config ([dbd9a72](https://github.com/martynvdijke/vandijke.xyz/commit/dbd9a725dea1e7121fcf04193440a3af92818df2))
+
 ## [1.0.2](https://github.com/martynvdijke/vandijke.xyz/compare/v1.0.1...v1.0.2) (2026-02-20)
 
 ## [1.0.1](https://github.com/martynvdijke/vandijke.xyz/compare/v1.0.0...v1.0.1) (2026-02-20)
