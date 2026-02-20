@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/martynvdijke/vandijke.xyz/compare/v1.0.0...v1.0.1) (2026-02-20)
+
+
+### Bug Fixes
+
+* **ci:** versioning ([f973742](https://github.com/martynvdijke/vandijke.xyz/commit/f9737421a6e2430906bfaec45893ed519cd6134a))
+
 # 1.0.0 (2026-02-20)
 
 
