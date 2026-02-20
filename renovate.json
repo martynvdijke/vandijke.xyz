@@ -27,6 +27,14 @@
       "automerge": true
     }
   ],
+  "regexManagers": [
+    {
+      "fileMatch": ["^\\.github/workflows/.*\\.yml$"],
+      "matchStrings": [
+        "# renovate: datasource=(?<datasource>.*?) depName=(?<depName>.*?)\\s.*?_VERSION=(?<currentValue>.*)"
+      ]
+    }
+  ],
   "github-actions": {
     "enabled": true
   }
