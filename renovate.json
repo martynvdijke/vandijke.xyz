@@ -9,15 +9,13 @@
   ],
   "automergeType": "pr",
   "dependencyDashboard": true,
-  "ignorePaths": ["**/node_modules/**", "**/__fixtures__/**", "test/**"],
-  "ignorePresets": [":ignoreModulesAndTests"],
   "platform": "github",
   "platformAutomerge": true,
   "prCreation": "immediate",
   "prHourlyLimit": 10,
   "rebaseWhen": "conflicted",
   "configMigration": true,
-  "repositories": ["martynvdijke/sandwitches"],
+  "repositories": ["martynvdijke/vandijke.xyz"],
   "timezone": "UTC+1",
   "lockFileMaintenance": {
     "enabled": true
@@ -30,12 +28,6 @@
     }
   ],
   "github-actions": {
-    "enabled": true
-  },
-  "pep621": {
-    "enabled": true
-  },
-  "npm": {
     "enabled": true
   }
 }
