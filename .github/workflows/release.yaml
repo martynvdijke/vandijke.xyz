@@ -30,6 +30,14 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
+      - name: Login to GitHub Container Registry
+        if: github.event_name != 'pull_request'
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Checkout Repository
         uses: actions/checkout@v6
         with:
@@ -68,7 +76,11 @@ jobs:
 
       - name: Push Docker image
         run: |
+          docker tag martynvandijke/vandijke.xyz:latest ghcr.io/martynvdijke/vandijke.xyz:latest
           docker push martynvandijke/vandijke.xyz:latest
+          docker push ghcr.io/martynvdijke/vandijke.xyz:latest
           echo "Pushing versioned tag: ${{ steps.version.outputs.version }}"
           docker tag martynvandijke/vandijke.xyz:latest martynvandijke/vandijke.xyz:${{ steps.version.outputs.version }}
+          docker tag martynvandijke/vandijke.xyz:latest ghcr.io/martynvdijke/vandijke.xyz:${{ steps.version.outputs.version }}
           docker push martynvandijke/vandijke.xyz:${{ steps.version.outputs.version }}
+          docker push ghcr.io/martynvdijke/vandijke.xyz:${{ steps.version.outputs.version }}
