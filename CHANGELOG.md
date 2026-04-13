@@ -1,3 +1,5 @@
+## [1.0.19](https://github.com/martynvdijke/vandijke.xyz/compare/v1.0.18...v1.0.19) (2026-04-13)
+
 ## [1.0.18](https://github.com/martynvdijke/vandijke.xyz/compare/v1.0.17...v1.0.18) (2026-04-10)
 
 ## [1.0.17](https://github.com/martynvdijke/vandijke.xyz/compare/v1.0.16...v1.0.17) (2026-04-06)
