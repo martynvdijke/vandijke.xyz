@@ -30,3 +30,22 @@ jobs:
       - name: Push Docker image
         run: docker push martynvandijke/vandijke.xyz:latest
 
+      - name: Gotify Success Notification
+        if: success()
+        uses: eikendev/gotify-action@master
+        with:
+          gotify_api_base: ${{ secrets.GOTIFY_API_BASE }}
+          gotify_app_token: ${{ secrets.GOTIFY_APP_TOKEN }}
+          notification_title: 'Build Successful - vandijke.xyz'
+          notification_message: 'Site built and Docker image pushed successfully.'
+
+      - name: Gotify Failure Notification
+        if: failure()
+        uses: eikendev/gotify-action@master
+        with:
+          gotify_api_base: ${{ secrets.GOTIFY_API_BASE }}
+          gotify_app_token: ${{ secrets.GOTIFY_APP_TOKEN }}
+          notification_title: 'Build Failed - vandijke.xyz'
+          notification_message: 'The build workflow has failed. ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}'
+          notification_priority: 5
+
