@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+    branches: [master, main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - uses: actions/setup-go@v5
+        with:
+          go-version: stable
+      - name: Install Hugo
+        run: |
+          go install github.com/gohugoio/hugo@latest
+      - name: Build site
+        run: hugo --minify
+      - name: Test Docker build
+        run: docker build . --file Dockerfile --tag test-build
