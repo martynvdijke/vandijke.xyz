@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/martynvdijke/vandijke.xyz/compare/v1.0.26...v1.1.0) (2026-05-18)
+
+
+### Features
+
+* add CI test workflow for hugo and docker build validation ([746390c](https://github.com/martynvdijke/vandijke.xyz/commit/746390c32644fc560820255b5e8424a7c32e269d))
+
 ## [1.0.26](https://github.com/martynvdijke/vandijke.xyz/compare/v1.0.25...v1.0.26) (2026-05-12)
 
 ## [1.0.25](https://github.com/martynvdijke/vandijke.xyz/compare/v1.0.24...v1.0.25) (2026-05-05)
