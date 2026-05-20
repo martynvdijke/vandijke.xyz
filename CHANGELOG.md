@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/martynvdijke/vandijke.xyz/compare/v1.1.0...v1.1.1) (2026-05-20)
+
+
+### Bug Fixes
+
+* ensure Gotify notification always fires on release workflow ([c9de9b5](https://github.com/martynvdijke/vandijke.xyz/commit/c9de9b584af9e4679007bc90f05e6282ae34033c))
+
 # [1.1.0](https://github.com/martynvdijke/vandijke.xyz/compare/v1.0.26...v1.1.0) (2026-05-18)
 
 
