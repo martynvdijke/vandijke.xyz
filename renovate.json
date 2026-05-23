@@ -13,7 +13,7 @@
   "platformAutomerge": true,
   "prCreation": "immediate",
   "prHourlyLimit": 10,
-  "rebaseWhen": "conflicted",
+  "rebaseWhen": "behind-base-branch",
   "configMigration": true,
   "repositories": [
     "martynvdijke/vandijke.xyz"
@@ -25,6 +25,7 @@
   "packageRules": [
     {
       "matchUpdateTypes": [
+        "major",
         "minor",
         "patch",
         "pin",
