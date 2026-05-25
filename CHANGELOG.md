@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/martynvdijke/vandijke.xyz/compare/v1.1.1...v1.1.2) (2026-05-25)
+
+
+### Bug Fixes
+
+* remove stalePrAge from renovate.json (removed in Renovate v37) ([78de0e9](https://github.com/martynvdijke/vandijke.xyz/commit/78de0e9e637ff18fdb5b0fc082b5cc25d7ac8988))
+
 ## [1.1.1](https://github.com/martynvdijke/vandijke.xyz/compare/v1.1.0...v1.1.1) (2026-05-20)
 
 
