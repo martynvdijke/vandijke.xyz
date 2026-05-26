@@ -5,6 +5,13 @@
 
 * invalid timezone UTC+1, use Europe/Amsterdam instead ([ca62088](https://github.com/martynvdijke/vandijke.xyz/commit/ca620883fc657b245252094ceaca228759250dac))
 
+## [1.1.4](https://github.com/martynvdijke/vandijke.xyz/compare/v1.1.3...v1.1.4) (2026-05-26)
+
+
+### Bug Fixes
+
+* invalid timezone UTC+1, use Europe/Amsterdam instead ([ca62088](https://github.com/martynvdijke/vandijke.xyz/commit/ca620883fc657b245252094ceaca228759250dac))
+
 ## [1.1.3](https://github.com/martynvdijke/vandijke.xyz/compare/v1.1.2...v1.1.3) (2026-05-25)
 
 
