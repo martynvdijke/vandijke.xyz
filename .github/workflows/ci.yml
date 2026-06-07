@@ -25,10 +25,8 @@ jobs:
         run: docker build . --file Dockerfile --tag test-build
   otel:
     permissions:
-      contents: read # Required. To access the private repository
-      actions: read # Required. To read workflow runs
-      pull-requests: read # Optional. To read PR labels
-      checks: read # Optional. To read run annotations
+      contents: read
+      actions: read
     if: always()
     name: OpenTelemetry Export Trace
     runs-on: ubuntu-latest
@@ -39,5 +37,5 @@ jobs:
         with:
           otlpEndpoint: ${{ secrets.OTLP_ENDPOINT }}
           otlpHeaders: ${{ secrets.OTLP_HEADERS }}
-          otlpAuthorization: ${{ secrets.OTLP_AUTH_TOKEN }}
-          otelToken: ${{ secrets.OTEL_TOKEN }}
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          otelServiceName: vandijke-xyz

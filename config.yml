@@ -1,12 +1,12 @@
 baseURL: https://vandijke.xyz
-languageCode: en-us
+locale: en-us
 theme: "PaperMod"
 title: vandijke.xyz
 enableRobotsTXT: true
 
 languages:
   en:
-    languageName: "English"
+    label: "English"
     weight: 1
     taxonomies:
       category: categories
@@ -83,7 +83,7 @@ params:
       - name: "instagram"
         url: "https://instagram.com/martynvandijke"
       - name: "linkedin"
-        ulr: "https://linkedin.com/in/martynvandijke"
+        url: "https://linkedin.com/in/martynvandijke"
 
   outputs:
       home:
