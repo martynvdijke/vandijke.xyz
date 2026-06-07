@@ -33,6 +33,7 @@ jobs:
     needs: [build]
     steps:
       - name: Export workflow
+        continue-on-error: true
         uses: corentinmusard/otel-cicd-action@v4
         with:
           otlpEndpoint: ${{ secrets.OTLP_ENDPOINT }}
