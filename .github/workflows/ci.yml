@@ -38,5 +38,5 @@ jobs:
         with:
           otlpEndpoint: ${{ secrets.OTLP_ENDPOINT }}
           otlpHeaders: ${{ secrets.OTLP_HEADERS }}
-          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          otelToken: ${{ secrets.OTEL_TOKEN }}
           otelServiceName: vandijke-xyz
