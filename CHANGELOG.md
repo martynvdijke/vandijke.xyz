@@ -1,3 +1,18 @@
+# [1.2.0](https://github.com/martynvdijke/vandijke.xyz/compare/v1.1.5...v1.2.0) (2026-06-09)
+
+
+### Bug Fixes
+
+* correct CI workflow inputs and fix config deprecations ([29cca17](https://github.com/martynvdijke/vandijke.xyz/commit/29cca17b59153ea175d518f0bb4f5d1c1b74bee1))
+* mark OTel export as non-fatal with continue-on-error ([9909255](https://github.com/martynvdijke/vandijke.xyz/commit/99092552c4ba036a6535826779b7672a2c2f3292))
+* use githubToken instead of otelToken for otel-cicd-action@v4 ([57deb1b](https://github.com/martynvdijke/vandijke.xyz/commit/57deb1b47f4326839d5dcb6b7432f0cb5da46622))
+* use otelToken input instead of githubToken for otel-cicd-action ([87f126f](https://github.com/martynvdijke/vandijke.xyz/commit/87f126f1db57d50d580db9dc22ab65cd0cbf1107))
+
+
+### Features
+
+* add otlpAuthorization input for Bearer auth ([b2cd137](https://github.com/martynvdijke/vandijke.xyz/commit/b2cd1379b94b327121e13fdcdf5cc10c80611d23))
+
 ## [1.1.5](https://github.com/martynvdijke/vandijke.xyz/compare/v1.1.4...v1.1.5) (2026-05-29)
 
 ## [1.1.4](https://github.com/martynvdijke/vandijke.xyz/compare/v1.1.3...v1.1.4) (2026-05-26)
