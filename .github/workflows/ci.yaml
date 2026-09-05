@@ -44,11 +44,26 @@ jobs:
           wget https://github.com/gohugoio/hugo/releases/download/${HUGO_VERSION}/hugo_${HUGO_VERSION_NO_V}_linux-amd64.deb
           sudo dpkg -i hugo_${HUGO_VERSION_NO_V}_linux-amd64.deb
 
+      - name: Generate build-time stats (Atuin)
+        run: |
+          bash scripts/export-atuin-stats.sh || cp -f static/data/atuin.sample.json static/data/atuin.json || true
+          ls -lh static/data/atuin.json
+
+      - name: Generate build-time stats (GitHub)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USER: martynvdijke
+        run: |
+          node scripts/fetch-github-stats.mjs || cp -f static/data/github.sample.json static/data/github.json || true
+          ls -lh static/data/github.json
+
       - name: Hugo build
-        run: hugo
+        run: hugo --minify
 
       - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag martynvandijke/vandijke.xyz:latest
+        run: DOCKER_BUILDKIT=1 docker build --secret id=gh_token,env=GITHUB_TOKEN --file Dockerfile --tag martynvandijke/vandijke.xyz:latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Push Docker image
         if: github.event_name != 'pull_request' && github.ref != 'refs/heads/main'

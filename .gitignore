@@ -1,3 +1,7 @@
 public/*
 openspec/
 .opencode/
+# Build-time generated stats (commit only *.sample.json)
+static/data/atuin.json
+static/data/github.json
+resources/
