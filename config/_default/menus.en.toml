@@ -49,12 +49,12 @@
 
 [[main]]
   name = "Blog"
-  url = "tags/blog/"
+  pageRef = "blog"
   weight = 5
 
 [[main]]
-  name = "About me"
-  url = "about/"
+  name = "Projects"
+  pageRef = "projects"
   weight = 10
 
 [[main]]
