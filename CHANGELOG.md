@@ -1,3 +1,20 @@
+# [1.3.0](https://github.com/martynvdijke/vandijke.xyz/compare/v1.2.0...v1.3.0) (2026-09-21)
+
+
+### Bug Fixes
+
+* **ci:** make pinact check non-blocking ([ce4623d](https://github.com/martynvdijke/vandijke.xyz/commit/ce4623d3fb25636881b372d5d7b1ff419bcb8072))
+* **ci:** pass githubToken to otel action and quote shell vars ([ec60c03](https://github.com/martynvdijke/vandijke.xyz/commit/ec60c03a807f12ff8c6465ca0059cd774f63d569))
+* **ci:** remove unsupported --diff flag from pinact ([b3bdeaf](https://github.com/martynvdijke/vandijke.xyz/commit/b3bdeaf3ace72fb4b8af55aad26717bae03aea0d))
+* **ci:** update actionlint to v1.7.12 (v1 tag removed upstream) ([46257f5](https://github.com/martynvdijke/vandijke.xyz/commit/46257f570291a93a784591c997efe4aded297d5d))
+* rename githubToken to otelToken for otel-cicd-action@v4 ([f17fca1](https://github.com/martynvdijke/vandijke.xyz/commit/f17fca1ad58f66cbab46fee68eb65f49a7412e84))
+
+
+### Features
+
+* restore original branding and rework content sections ([55af33c](https://github.com/martynvdijke/vandijke.xyz/commit/55af33c465aa9573ad853f8711589cf0d186bd45))
+* **theme:** switch PaperMod to Blowfish ([fb0be93](https://github.com/martynvdijke/vandijke.xyz/commit/fb0be9354d0475c1a20d992aae749eb8192d6742))
+
 # [1.2.0](https://github.com/martynvdijke/vandijke.xyz/compare/v1.1.5...v1.2.0) (2026-06-09)
 
 
