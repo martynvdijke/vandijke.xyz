@@ -41,8 +41,8 @@ jobs:
           # renovate: datasource=github-releases depName=gohugoio/hugo
           HUGO_VERSION=v0.165.0
           HUGO_VERSION_NO_V=${HUGO_VERSION#v}
-          wget https://github.com/gohugoio/hugo/releases/download/${HUGO_VERSION}/hugo_${HUGO_VERSION_NO_V}_linux-amd64.deb
-          sudo dpkg -i hugo_${HUGO_VERSION_NO_V}_linux-amd64.deb
+          wget "https://github.com/gohugoio/hugo/releases/download/${HUGO_VERSION}/hugo_${HUGO_VERSION_NO_V}_linux-amd64.deb"
+          sudo dpkg -i "hugo_${HUGO_VERSION_NO_V}_linux-amd64.deb"
 
       - name: Hugo build
         run: hugo
@@ -92,4 +92,4 @@ jobs:
         with:
           otlpEndpoint: ${{ secrets.OTLP_ENDPOINT }}
           otlpHeaders: ${{ secrets.OTLP_HEADERS }}
-          otelToken: ${{ secrets.OTEL_TOKEN }}
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
