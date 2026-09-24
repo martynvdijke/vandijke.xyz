@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/martynvdijke/vandijke.xyz/compare/v1.3.0...v1.4.0) (2026-09-24)
+
+
+### Features
+
+* add animated flame icon (SVG, GIF, Lottie) ([c040534](https://github.com/martynvdijke/vandijke.xyz/commit/c040534995e89fe5bd422c63a3f1264f92203e1e))
+
 # [1.3.0](https://github.com/martynvdijke/vandijke.xyz/compare/v1.2.0...v1.3.0) (2026-09-21)
 
 
