@@ -2,3 +2,6 @@ public/*
 resources/_gen/
 openspec/
 .opencode/
+
+# Zensical build output
+site/
