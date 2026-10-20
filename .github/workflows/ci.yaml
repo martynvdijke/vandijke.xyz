@@ -51,7 +51,7 @@ jobs:
         run: docker build . --file Dockerfile --tag martynvandijke/vandijke.xyz:latest
 
       - name: Push Docker image
-        if: github.event_name != 'pull_request' && github.ref != 'refs/heads/main'
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
           docker tag martynvandijke/vandijke.xyz:latest ghcr.io/martynvdijke/vandijke.xyz:latest
           docker push martynvandijke/vandijke.xyz:latest
