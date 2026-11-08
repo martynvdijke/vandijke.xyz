@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/martynvdijke/vandijke.xyz/compare/v1.4.24...v1.5.0) (2026-11-08)
+
+
+### Features
+
+* **favicon:** use animated favicon and add stats data snapshots ([b581520](https://github.com/martynvdijke/vandijke.xyz/commit/b58152002063c1df4a22cf13f1b722ae1364a5a4))
+
 ## [1.4.24](https://github.com/martynvdijke/vandijke.xyz/compare/v1.4.23...v1.4.24) (2026-11-05)
 
 ## [1.4.23](https://github.com/martynvdijke/vandijke.xyz/compare/v1.4.22...v1.4.23) (2026-11-03)
