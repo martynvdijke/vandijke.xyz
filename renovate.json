@@ -10,7 +10,7 @@
   ],
   "automergeType": "pr",
   "dependencyDashboard": true,
-  "platformAutomerge": true,
+  "platformAutomerge": false,
   "prCreation": "immediate",
   "prHourlyLimit": 10,
   "rebaseWhen": "conflicted",
